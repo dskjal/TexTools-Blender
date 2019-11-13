@@ -4,7 +4,10 @@ TexTools is a Free addon for Blender 3D with a set of professional UV and Textur
 
 ## Tips
 A part of tools are disabled, when UV Sync Selection is enabled.  
-UV 同期選択が有効な場合は一部の機能が使えません。
+UV 同期選択が有効な場合は一部の機能が使えません。  
+
+If ZeroDivisionError is occurred, run merge by distance.  
+ZeroDivisionError が出るときは頂点をマージを実行してください。
 
 ## Download & Documentation ##
 Visit the [Official Website & Documentation](http://renderhjs.net/textools/blender/) for in depth overview of all the tools. Alternatively visit this [release log](http://renderhjs.net/textools/blender/log.html)
