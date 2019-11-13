@@ -342,7 +342,7 @@ def setup_image(mode, name, width, height, path, is_clear):
 
 	if name not in bpy.data.images:
 		# Create new image with 32 bit float
-		is_float_32 = bpy.context.preferences.addons["textools"].preferences.bake_32bit_float == '32'
+		is_float_32 = bpy.context.preferences.addons["TexTools"].preferences.bake_32bit_float == '32'
 		image = bpy.data.images.new(name, width=width, height=height, float_buffer=is_float_32)
 		if "_normal_" in image.name:
     			image.colorspace_settings.name = 'Non-Color'
@@ -531,7 +531,7 @@ def cycles_bake(mode, padding, sampling_scale, samples, ray_distance, is_multi, 
 			bpy.context.scene.render.bake.normal_r = 'POS_X'
 			bpy.context.scene.render.bake.normal_b = 'POS_Z'
 			# Adjust Y swizzle from Addon preferences
-			swizzle_y = bpy.context.preferences.addons["textools"].preferences.swizzle_y_coordinate
+			swizzle_y = bpy.context.preferences.addons["TexTools"].preferences.swizzle_y_coordinate
 			if swizzle_y == 'Y-':
 				bpy.context.scene.render.bake.normal_g = 'NEG_Y'
 			elif swizzle_y == 'Y+':
